@@ -29,4 +29,4 @@ $ composer config secure-http false
 给所有crontab加项目名称前缀，防止设置crontab设置锁后不同项目间冲突
 ```
 ### 版本改动:
-v1.0.1   给所有crontab加项目名称前缀
+v1.0.0  给所有crontab加项目名称前缀
