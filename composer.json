@@ -1,0 +1,31 @@
+{
+  "name": "hky/hyperf-crontab",
+  "description": "hack hyperf crontab",
+  "type": "library",
+  "authors": [
+    {
+      "name": "luoning",
+      "email": "nluo@kaikeba.com"
+    }
+  ],
+  "require": {
+    "hyperf/di": "~1.1.0",
+    "hyperf/config": "~1.1.0",
+    "psr/container": "^1.0",
+    "hyperf/crontab": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "HKY\\HyperfCrontab\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "hyperf": {
+      "config": "HKY\\HyperfCrontab\\ConfigProvider"
+    },
+    "branch-alias":{
+      "dev-master":"1.0.1"
+    }
+  }
+}
