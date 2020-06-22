@@ -11,6 +11,8 @@ declare(strict_types=1);
  */
 namespace HKY\HyperfCrontab;
 
+use Hyperf\Crontab\Strategy\Executor;
+
 class ConfigProvider
 {
     public function __invoke(): array
@@ -20,6 +22,7 @@ class ConfigProvider
                 CrontabDispatcherStartedListener::class
             ],
             'dependencies' => [
+                Executor::class => CrontabExecutor::class,
             ],
             'annotations' => [
                 'scan' => [
