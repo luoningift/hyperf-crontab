@@ -11,6 +11,7 @@ declare(strict_types=1);
  */
 namespace HKY\HyperfCrontab;
 
+use Hyperf\Crontab\Mutex\ServerMutex;
 use Hyperf\Crontab\Strategy\Executor;
 
 class ConfigProvider
@@ -23,6 +24,7 @@ class ConfigProvider
             ],
             'dependencies' => [
                 Executor::class => CrontabExecutor::class,
+                ServerMutex::class => RedisServerMutex::class,
             ],
             'annotations' => [
                 'scan' => [
